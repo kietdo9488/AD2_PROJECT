@@ -1,9 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DetailsProductActivity">
+    <!--chi tiet san pham-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="5dp"
+                android:id="@+id/imageViewLoaiSp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/textViewChiTietSP"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:gravity="top"
+                android:text="Nuoc Rua Chen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/textViewGiaSP"
+                    android:textColor="#f20"
+                    android:textSize="25sp"
+                    android:text="Giá: "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/textViewGiaSP"
+                    android:textColor="#f20"
+                    android:textSize="25sp"
+                    android:text="23000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/textViewGiaSP"
+                    android:textColor="#f20"
+                    android:textSize="25sp"
+                    android:text="đ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <EditText
+                    android:layout_width="530px"
+                    android:layout_height="180px"
+
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/edit_background"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:layout_width="530px"
+                    android:layout_height="110px"
+
+                    android:background="@drawable/edit_btn_chitietsp"
+                    android:text="thêm vào giỏ hàng "/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nước rửa chén Sunlight Thiên Nhiên an toàn cho chén đĩa trẻ em với chiết xuất Lô Hội và Muối khoáng túi 2.1kg"
+                        android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>
