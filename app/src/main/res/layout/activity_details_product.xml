@@ -18,7 +18,7 @@
             android:layout_weight="5">
             <ImageView
                 android:src="@mipmap/ic_launcher"
-                android:layout_margin="5dp"
+                android:layout_margin="3dp"
                 android:id="@+id/imageViewLoaiSp"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
@@ -46,8 +46,8 @@
                 android:layout_weight="1.2"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_margin="5dp"
                     android:id="@+id/textViewGiaSP"
+                    android:layout_margin="5dp"
                     android:textColor="#f20"
                     android:textSize="25sp"
                     android:text="Giá: "
@@ -81,7 +81,6 @@
                 <EditText
                     android:layout_width="530px"
                     android:layout_height="180px"
-
                     android:layout_centerInParent="true"
                     android:background="@drawable/edit_background"
                     />
@@ -93,9 +92,9 @@
                 android:gravity="center">
                 <Button
                     android:layout_width="530px"
-                    android:layout_height="110px"
-
+                    android:layout_height="120px"
                     android:background="@drawable/edit_btn_chitietsp"
+                    android:textSize="10sp"
                     android:text="thêm vào giỏ hàng "/>
             </LinearLayout>
 
