@@ -12,105 +12,112 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5">
+
             <ImageView
-                android:src="@mipmap/ic_launcher"
-                android:layout_margin="3dp"
-                android:id="@+id/imageViewLoaiSp"
+                android:id="@+id/imageDetailProduct"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:src="@mipmap/ic_launcher" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
             android:orientation="vertical">
+
             <TextView
-                android:layout_margin="5dp"
-                android:id="@+id/textViewChiTietSP"
-                android:textColor="@color/black"
-                android:textSize="19sp"
-                android:gravity="top"
-                android:text="Nuoc Rua Chen"
+                android:id="@+id/nameProduct"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="Nuoc Rua Chen"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.2"
                 android:orientation="horizontal">
+
                 <TextView
-                    android:id="@+id/textViewGiaSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:textColor="#f20"
-                    android:textSize="25sp"
+                    android:layout_weight="6"
                     android:text="Giá: "
+                    android:textColor="#f20"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/priceProduct"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="6"/>
-                <TextView
                     android:layout_margin="5dp"
-                    android:id="@+id/textViewGiaSP"
-                    android:textColor="#f20"
-                    android:textSize="25sp"
+                    android:layout_weight="4"
                     android:text="23000"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"/>
-                <TextView
-                    android:layout_margin="5dp"
-                    android:id="@+id/textViewGiaSP"
                     android:textColor="#f20"
-                    android:textSize="25sp"
-                    android:text="đ"
+                    android:textSize="25sp" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="7"/>
+                    android:layout_margin="5dp"
+                    android:layout_weight="7"
+                    android:text="đ"
+                    android:textColor="#f20"
+                    android:textSize="25sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center">
+
                 <EditText
+                    android:id="@+id/quantityProduct"
                     android:layout_width="530px"
                     android:layout_height="180px"
                     android:layout_centerInParent="true"
-                    android:background="@drawable/edit_background"
-                    />
+                    android:background="@drawable/edit_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center">
                 <Button
+                    android:id="@+id/btnAddProduct"
                     android:layout_width="530px"
                     android:layout_height="120px"
                     android:background="@drawable/edit_btn_chitietsp"
-                    android:textSize="10sp"
-                    android:text="thêm vào giỏ hàng "/>
+                    android:text="thêm vào giỏ hàng "
+                    android:textSize="10sp" />
             </LinearLayout>
-
-
-
         </LinearLayout>
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Nước rửa chén Sunlight Thiên Nhiên an toàn cho chén đĩa trẻ em với chiết xuất Lô Hội và Muối khoáng túi 2.1kg"
-                        android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/describeProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nước rửa chén Sunlight Thiên Nhiên an toàn cho chén đĩa trẻ em với chiết xuất Lô Hội và Muối khoáng túi 2.1kg"
+            android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>
