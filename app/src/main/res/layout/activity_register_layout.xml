@@ -109,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nhập tên tài khoản"
+                android:text="Nhập Email"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -145,7 +145,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nhập tên tài khoản"
+                android:text="Nhập số điện thoại"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
