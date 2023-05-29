@@ -219,6 +219,7 @@
                     android:paddingLeft="70dp"
                     android:paddingRight="70dp"
                     android:text="Thêm"
+                    android:textSize="25sp"
                     />
                 <TextView
                     android:layout_width="match_parent"

@@ -15,6 +15,15 @@
         android:theme="@style/Theme.CuaHangGiaDung"
         tools:targetApi="31">
         <activity
+            android:name=".ManagementUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagementCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagementProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewProductActivity"
             android:exported="false" />
         <activity
@@ -28,7 +37,7 @@
         </activity>
         <activity
             android:name=".InformationUserEditActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
