@@ -91,10 +91,11 @@
                     android:layout_weight="3" />
 
                 <EditText
-                    android:id="@+id/username"
+                    android:id="@+id/nameLogin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
+                    android:maxLines="1"
                     android:hint="Nhập Tên "
                     android:layout_weight="1" />
             </LinearLayout>
@@ -129,11 +130,12 @@
                     android:layout_weight="3" />
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/passwordLogin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:inputType="textPassword"
+                    android:maxLines="1"
                     android:hint="Nhập mật khẩu "
                     app:passwordToggleEnabled="true" />
 
@@ -172,8 +174,8 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center">
-                <Button
-                    android:id="@+id/btnLogin"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/loginBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -189,16 +191,17 @@
                     android:layout_marginTop="5dp"
                     android:background="@drawable/boder"
                     android:layout_weight="2"/>
-                <Button
-                    android:id="@+id/btnRegister"
+
+                <EditText
+                    android:id="@+id/registerNowBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_weight="1"
-                    android:textColor="@color/black"
                     android:background="#fff"
-                    android:text="Đăng Ký" />
+                    android:text="Đăng Ký"
+                    android:textColor="@color/black" />
 
-                            </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
