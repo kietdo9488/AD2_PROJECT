@@ -13,6 +13,7 @@ import com.example.cuahanggiadung.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class CategoryAdapter extends BaseAdapter {
 
@@ -45,7 +46,7 @@ public class CategoryAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup parent) {
+    public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder = null;
         if (view == null)
         {
@@ -67,6 +68,6 @@ public class CategoryAdapter extends BaseAdapter {
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background)
                 .into(viewHolder.imgLoaiSanPham);
-        return null;
+        return view;
     }
 }

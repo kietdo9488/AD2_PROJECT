@@ -2,10 +2,12 @@ package com.example.cuahanggiadung;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         AnhXa();
         ActionViewFlipper();
+        ActionBar();
     }
 
     private void ActionViewFlipper()
@@ -58,6 +61,19 @@ public class MainActivity extends AppCompatActivity {
         viewFlipper.setAutoStart(true);
     }
 
+    private void ActionBar()
+    {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationIcon(android.R.drawable.ic_menu_sort_by_size);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+    }
+
+
     private void AnhXa()
     {
         toolbar = (Toolbar) findViewById(R.id.toolbarmanhinhchinh);
@@ -66,9 +82,13 @@ public class MainActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.navigationview);
         listViewManHinhChinh = (ListView) findViewById(R.id.listviewmanhinhchinh);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        //        arrCategoryModels = new ArrayList<>();
-        //        arrCategoryModels.add(0, new CategoryModel(0, "Home", "https://cdn-icons-png.flaticon.com/512/25/25694.png"));
-        //        categoryAdapter = new CategoryAdapter(arrCategoryModels, getApplicationContext());
-        //        listViewManHinhChinh.setAdapter(categoryAdapter);
+                arrCategoryModels = new ArrayList<>();
+                arrCategoryModels.add(0, new CategoryModel(0, "Home", "https://cdn-icons-png.flaticon.com/512/25/25694.png"));
+                arrCategoryModels.add(1, new CategoryModel(1, "Tu lanh", "https://beptukaff.vn/data/news/12357/tu-lanh-side-by-side-dang-multi-door-kaff-kf-bcd446w-1.jpg"));
+                arrCategoryModels.add(2, new CategoryModel(2, "May giat", "https://hangdienmaygiare.com/images/products/2023/03/03/large/may-giat-electrolux-ewf1024m3sb-10-kg-inverter_1677819674.jpg"));
+                arrCategoryModels.add(3, new CategoryModel(3, "Gia dung", "https://sunhouse.com.vn/pic/product/bo-noi-inox-5-day-sh779-removebg-preview.png"));
+
+        categoryAdapter = new CategoryAdapter(arrCategoryModels, getApplicationContext());
+                listViewManHinhChinh.setAdapter(categoryAdapter);
     }
 }
