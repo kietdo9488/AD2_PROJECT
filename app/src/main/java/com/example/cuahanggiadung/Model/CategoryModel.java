@@ -37,10 +37,6 @@ public class CategoryModel {
 
     @Override
     public String toString() {
-        return "CategoryModel{" +
-                "id=" + id +
-                ", category_name='" + category_name + '\'' +
-                ", category_image='" + category_image + '\'' +
-                '}';
+        return id + " : " + category_name + " : " + category_image;
     }
 }
