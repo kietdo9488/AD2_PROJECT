@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +14,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CuaHangGiaDung"
         tools:targetApi="31">
+        <activity
+            android:name=".ManagementCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagementUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagementProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InformationUserEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagementCategoryActivity$MainActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
